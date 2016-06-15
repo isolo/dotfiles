@@ -1,4 +1,5 @@
 " Leader
 let mapleader = " "
+
 runtime! ruby.vim
-runtime! 'common_config/*.vim'
+runtime! ./common_config/general_config.vim
