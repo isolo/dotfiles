@@ -1,10 +1,9 @@
 CONFIG_HOME=$(HOME)/.config
-NVIM_CONFIG=$(CONFIG_HOME)/nvim
 
 install: install-core
 
 install-core:
 	@echo "Updating config..."
-	@(ditto nvim/ $(NVIM_CONFIG)/)
+	@(ln -s $(PWD)/nvim $(CONFIG_HOME))
 	@echo "Config updated."
 
