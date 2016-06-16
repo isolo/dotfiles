@@ -45,6 +45,7 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
 
+autocmd! BufWritePost * Neomake " For neomake
 augroup vimrcEx
   autocmd!
 

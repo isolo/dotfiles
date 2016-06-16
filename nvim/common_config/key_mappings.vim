@@ -14,8 +14,11 @@ nnoremap <silent> <Leader>l :TestLast<CR>
 nnoremap <silent> <Leader>a :TestSuite<CR>
 nnoremap <silent> <leader>gt :TestVisit<CR>
 
+" vim-rubocop mappings
+nnoremap <Leader>r :Rubocop<CR>
+
 " Run commands that require an interactive shell
-nnoremap <Leader>r :RunInInteractiveShell<space>
+nnoremap <Leader><C-r> :RunInInteractiveShell<space>
 
 " Quicker window movement
 nnoremap <C-j> <C-w>j
