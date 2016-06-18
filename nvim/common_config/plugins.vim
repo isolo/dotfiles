@@ -1,10 +1,15 @@
 call plug#begin(expand('~/.vim/bundle/'))
 " General
-Plug 'scrooloose/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'scrooloose/nerdtree' " File tree
+Plug 'ctrlpvim/ctrlp.vim' " For fuzzy search
 Plug 'neomake/neomake'
+Plug 'vim-airline/vim-airline' " Airline theme
+Plug 'vim-airline/vim-airline-themes'
+" Wakatime
+Plug 'wakatime/vim-wakatime'
 " Git
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter' " git signs
 " Ruby
 Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby'
