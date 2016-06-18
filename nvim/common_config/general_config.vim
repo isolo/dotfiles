@@ -30,6 +30,7 @@ set nojoinspaces
 " Make it obvious where 80 characters is
 set textwidth=120
 set colorcolumn=+1
+hi ColorColumn ctermbg=lightgrey guibg=lightgrey
 
 " Numbers
 set number
@@ -80,3 +81,5 @@ set diffopt+=vertical
 if &compatible
   set nocompatible               " Be iMproved
 endif
+
+colorscheme desert
