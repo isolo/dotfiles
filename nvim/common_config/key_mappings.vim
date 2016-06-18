@@ -14,8 +14,8 @@ nnoremap <silent> <Leader>l :TestLast<CR>
 nnoremap <silent> <Leader>a :TestSuite<CR>
 nnoremap <silent> <leader>gt :TestVisit<CR>
 
-" vim-rubocop mappings
-nnoremap <Leader>r :Rubocop<CR>
+" Apply vimrc
+nnoremap <silent> <Leader>= :so %<CR>
 
 " Run commands that require an interactive shell
 nnoremap <Leader><C-r> :RunInInteractiveShell<space>
@@ -25,3 +25,11 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
+
+" vim-figgutive mappings
+nmap <C-g><C-s> :Gstatus<CR>
+nmap <C-k> :Gcommit -v -q<CR>
+nmap <C-g><C-p> :Gpull<CR>
+nmap <C-g><C-P> :Gpush<CR>
+nmap <C-g><C-b> :Gblame<CR>
+nmap <C-g>br :Git branch<space>
