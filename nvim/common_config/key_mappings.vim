@@ -20,6 +20,9 @@ nnoremap <silent> <Leader>= :so %<CR>
 " Run commands that require an interactive shell
 nnoremap <Leader><C-r> :RunInInteractiveShell<space>
 
+" Ctrlp + Ctags
+nnoremap <leader>. :CtrlPTag<CR>
+
 " Quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -28,8 +31,8 @@ nnoremap <C-l> <C-w>l
 
 " vim-figgutive mappings
 nmap <C-g><C-s> :Gstatus<CR>
-nmap <C-k> :Gcommit -v -q<CR>
-nmap <C-g><C-p> :Gpull<CR>
+nmap <C-g>k :Gcommit -v -q<CR>
+nmap <C-g>p :Gpull<CR>
 nmap <C-g><C-P> :Gpush<CR>
 nmap <C-g><C-b> :Gblame<CR>
 nmap <C-g>br :Git branch<space>
