@@ -36,3 +36,10 @@ nmap <C-g>p :Gpull<CR>
 nmap <C-g><C-P> :Gpush<CR>
 nmap <C-g><C-b> :Gblame<CR>
 nmap <C-g>br :Git branch<space>
+
+" Tab mappings
+nnoremap <silent> tt :tabn<CR>
+nnoremap <silent> tl :tabn<CR>
+nnoremap <silent> th :tabp<CR>
+nnoremap <silent> tj :tabclose<CR>
+nnoremap <silent> tn :tabnew<CR>
