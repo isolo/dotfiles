@@ -5,6 +5,7 @@ Plug 'ctrlpvim/ctrlp.vim' " For fuzzy search
 Plug 'neomake/neomake'
 Plug 'vim-airline/vim-airline' " Airline theme
 Plug 'vim-airline/vim-airline-themes'
+Plug 'scrooloose/nerdcommenter'
 " Wakatime
 Plug 'wakatime/vim-wakatime'
 " Git
