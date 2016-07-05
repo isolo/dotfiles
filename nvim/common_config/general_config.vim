@@ -1,4 +1,5 @@
 set backspace=2   " Backspace deletes like most programs in insert mode
+set nowrap
 set nobackup
 set nowritebackup
 set noswapfile    " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
@@ -26,11 +27,6 @@ set list listchars=tab:»·,trail:·,nbsp:·
 
 " Use one space, not two, after punctuation.
 set nojoinspaces
-
-" Make it obvious where 80 characters is
-set textwidth=120
-set colorcolumn=+1
-hi ColorColumn ctermbg=lightgrey guibg=lightgrey
 
 " Numbers
 set number
