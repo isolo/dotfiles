@@ -20,5 +20,8 @@ Plug 'tpope/vim-haml'
 Plug 'tpope/vim-endwise' " Adds end after if, do, end keywords
 Plug 'ervandew/supertab' " Performs all your vim insert mode completions with Tab
 Plug 'ngmy/vim-rubocop'
+" Markdown
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 
 call plug#end()
