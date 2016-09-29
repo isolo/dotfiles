@@ -79,3 +79,7 @@ if &compatible
 endif
 
 colorscheme desert
+highlight NonText guibg=none
+highlight Normal guibg=none
+
+let NERDSpaceDelims=1

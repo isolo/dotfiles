@@ -1,3 +1,4 @@
+
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
 
@@ -29,6 +30,10 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+" NERDTree mapping
+nnoremap <leader>nt :NERDTree<CR>
+nnoremap <leader>ntf :NERDTreeFind<CR>
+
 " vim-figgutive mappings
 nmap <C-g><C-s> :Gstatus<CR>
 nmap <C-g>k :Gcommit -v -q<CR>
@@ -44,3 +49,22 @@ nnoremap <silent> tl :tabn<CR>
 nnoremap <silent> th :tabp<CR>
 nnoremap <silent> tc :tabclose<CR>
 nnoremap <silent> tn :tabnew<CR>
+
+" System clipboard
+" " Copy to clipboard
+vnoremap  <leader>y  "+y
+nnoremap  <leader>Y  "+yg_
+nnoremap  <leader>y  "+y
+nnoremap  <leader>yy  "+yy
+
+" " Paste from clipboard
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P
+
+" Vim terminal mapping
+tnoremap <Esc> <C-\><C-n>
+
+" Unite mapping
+nnoremap <silent><leader>lg :<C-u>Unite -no-quit -keep-focus grep<CR>
