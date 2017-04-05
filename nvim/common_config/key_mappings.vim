@@ -21,9 +21,6 @@ nnoremap <silent> <Leader>= :so %<CR>
 " Run commands that require an interactive shell
 nnoremap <Leader><C-r> :RunInInteractiveShell<space>
 
-" Ctrlp + Ctags
-nnoremap <leader>. :CtrlPTag<CR>
-
 " Quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -49,15 +46,18 @@ nnoremap <silent> tl :tabn<CR>
 nnoremap <silent> th :tabp<CR>
 nnoremap <silent> tc :tabclose<CR>
 nnoremap <silent> tn :tabnew<CR>
+nnoremap <silent> tmh :tabm -1<CR>
+nnoremap <silent> tml :tabm +1<CR>
 
 " System clipboard
-" " Copy to clipboard
+"
+" Copy to clipboard
 vnoremap  <leader>y  "+y
 nnoremap  <leader>Y  "+yg_
 nnoremap  <leader>y  "+y
 nnoremap  <leader>yy  "+yy
 
-" " Paste from clipboard
+" Paste from clipboard
 nnoremap <leader>p "+p
 nnoremap <leader>P "+P
 vnoremap <leader>p "+p
@@ -67,4 +67,13 @@ vnoremap <leader>P "+P
 tnoremap <Esc> <C-\><C-n>
 
 " Unite mapping
-nnoremap <silent><leader>lg :<C-u>Unite -no-quit -keep-focus grep<CR>
+nnoremap <silent><leader>lg :<C-u>Unite -no-quit -keep-focus vimgrep<CR>
+nnoremap <silent><leader>lgp :<C-u>Unite -no-quit -keep-focus grep:.<CR>
+
+" fzf mapping
+nmap <C-p> :FZF<CR>
+nmap <silent><leader>. :Tags<CR>
+nmap <silent><leader>, :BTags<CR>
+
+" Ctags
+" map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
