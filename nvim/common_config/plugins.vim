@@ -22,6 +22,8 @@ Plug 'wakatime/vim-wakatime'
 " Git
 Plug 'tpope/vim-fugitive' " Git plugin diff
 Plug 'airblade/vim-gitgutter' " Git diff signs
+" Tests
+Plug 'janko-m/vim-test' " Test runner
 " Ruby
 Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby'
