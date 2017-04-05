@@ -12,6 +12,7 @@ Plug 'scrooloose/nerdcommenter' " Comments
 Plug 'junegunn/fzf' " Required by fzf.vim
 Plug 'junegunn/fzf.vim' " Fuzzy search
 " Unite
+Plug 'Shougo/vimproc.vim', {'do' : 'make'} " Required by Unite#grep
 Plug 'shougo/unite.vim' " Advanced search
 Plug 'shougo/denite.nvim' " Async advanced search
 Plug 'shougo/unite-outline' " Async advanced search
