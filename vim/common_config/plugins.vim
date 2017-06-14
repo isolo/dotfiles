@@ -2,6 +2,7 @@ call plug#begin(expand('~/.vim/bundle/'))
 " Appearance
 Plug 'vim-airline/vim-airline' " Airline theme
 Plug 'vim-airline/vim-airline-themes' " Themes for Airline
+Plug 'morhetz/gruvbox' " Color scheme
 " General
 Plug 'neomake/neomake' " Async make/linters
 " Terminal
@@ -9,7 +10,7 @@ Plug 'kassio/neoterm' " Terminal in VIM
 " Navigation
 Plug 'scrooloose/nerdtree' " File tree
 Plug 'scrooloose/nerdcommenter' " Comments
-Plug 'junegunn/fzf' " Required by fzf.vim
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' } " Required by fzf.vim
 Plug 'junegunn/fzf.vim' " Fuzzy search
 " Unite
 Plug 'Shougo/vimproc.vim', {'do' : 'make'} " Required by Unite#grep
