@@ -108,6 +108,11 @@ let g:airline#extensions#tabline#show_buffers = 0
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 let g:airline_theme = 'lucius'
+let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " Color Scheme
 colo gruvbox
+
+" Match braces
+runtime macros/matchit.vim
