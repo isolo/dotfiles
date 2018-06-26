@@ -18,5 +18,10 @@ macos:
 	@touch $(ZSHRC)
 	@cat .zsh_mac_os >> $(ZSHRC)
 
+linux:
+	@echo "Install linux specific..."
+	@touch $(ZSHRC)
+	@cat .zsh_linux >> $(ZSHRC)
+
 clean:
 	@echo "" > $(ZSHRC)
