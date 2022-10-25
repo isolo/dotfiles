@@ -1,6 +1,9 @@
 
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
+" Close quickfix windows
+nnoremap <Leader>c :ccl <bar> lcl<CR>
+
 
 " Get off my lawn
 nnoremap <Left> :echoe "Use h"<CR>
@@ -32,11 +35,11 @@ nnoremap <leader>nt :NERDTree<CR>
 nnoremap <leader>ntf :NERDTreeFind<CR>
 
 " vim-figgutive mappings
-nmap <C-g><C-s> :Gstatus<CR>
-nmap <C-g>k :Gcommit -v -q<CR>
-nmap <C-g>p :Gpull<CR>
-nmap <C-g><C-P> :Gpush<CR>
-nmap <C-g><C-b> :Gblame<CR>
+nmap <C-g><C-s> :G<CR>
+nmap <C-g>k :Git commit -v -q<CR>
+nmap <C-g>p :Git pull<CR>
+nmap <C-g><C-P> :Git push<CR>
+nmap <C-g><C-b> :Git blame<CR>
 nmap <C-g>br :Git branch<space>
 nmap <C-g>c :Git checkout<space>
 
@@ -48,6 +51,10 @@ nnoremap <silent> tc :tabclose<CR>
 nnoremap <silent> tn :tabnew<CR>
 nnoremap <silent> tmh :tabm -1<CR>
 nnoremap <silent> tml :tabm +1<CR>
+
+" Goyo
+nmap <silent> ge :Goyo 50%x100%<CR>
+nmap <silent> gq :Goyo<CR>
 
 " System clipboard
 "
@@ -75,5 +82,3 @@ nmap <C-p> :FZF<CR>
 nmap <silent><leader>. :Tags<CR>
 nmap <silent><leader>, :BTags<CR>
 
-" Ctags
-" map <Leader>rt :!ctags --extra=+f -R *<CR><CR>

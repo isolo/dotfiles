@@ -116,3 +116,11 @@ colo gruvbox
 
 " Match braces
 runtime macros/matchit.vim
+
+" Autocomplete
+let g:go_def_mode = "gopls"
+let g:go_fmt_command = "goimports"
+
+
+" go linter
+" autocmd BufWritePost,FileWritePost *.go execute 'GoLint' | cwindow
